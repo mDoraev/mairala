@@ -49,6 +49,7 @@ a{
 	color: #259bbd;
 	color: inherit;
 }
+
 p{
 	letter-spacing: 0.8px;
 }
@@ -103,6 +104,7 @@ input[type="text"]:focus:-ms-input-placeholder{
 }
 .fa-linkedin:before {
   content: "\f0e1";
+  margin-top: -5px;
 }
 .fa-twitter:before {
   content: "\f099";
@@ -119,14 +121,17 @@ input[type="text"]:focus:-ms-input-placeholder{
 .fa-map-marker:before {
   content: "\f041";
 }
-/*icons*/
+.fa-download:before {
+  content: "\f019";
+}
+
+
 .container{
 	width: 100%;
 	max-width: 1230px;
 	padding: 0 30px;
 	margin-left: auto;
 	margin-right: auto;
-	overflow: hidden;
 }
 .tac{
 	text-align: center;
@@ -257,10 +262,18 @@ font-family: 'Raleway-Semibold';
 	background-color: #272420;
 	font-size: 16px;
 	border: none;
+	letter-spacing: 1.6px;
 }
-.slider__hover__message__btn svg{
-	margin-bottom: 18px;
+.slider__hover__message__btn:hover{
+color: #272420;
+background-color: #fff;
+font-weight: bold;
 }
+.slider__hover__message__btn i{
+font-size: 16px;
+margin-left: 13px;
+}
+
 .home-block{
 	position: relative;
 	padding-bottom: 80px;
@@ -331,12 +344,24 @@ margin: 0;
 	margin: 12px 0;
 
 }
+.home-block__btn:hover{
+color: #fff;
+background-color: #000;
+}
 .home-block__btn:after{
-content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="15.908" height="8" viewBox="0 0 15.908 8" overflow="visible" enable-background="new 0 0 15.908 8" xml:space="preserve" data-livestyle-extension="available"><g><path d="M12.641,2.375c0,0-12.313-0.375-12.5,0s-0.188,3.125,0,3.375s12.5,0,12.5,0V2.375z"/><path d="M15.907,3.75c0.063-0.313-3.813-3.75-4-3.75s-0.188,8,0.125,8S15.845,4.063,15.907,3.75z"/></g></svg>');
-margin-left: 5px;
+content: "\f178";
 display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+/*content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="15.908" height="8" viewBox="0 0 15.908 8" overflow="visible" enable-background="new 0 0 15.908 8" xml:space="preserve" data-livestyle-extension="available"><g><path d="M12.641,2.375c0,0-12.313-0.375-12.5,0s-0.188,3.125,0,3.375s12.5,0,12.5,0V2.375z"/><path d="M15.907,3.75c0.063-0.313-3.813-3.75-4-3.75s-0.188,8,0.125,8S15.845,4.063,15.907,3.75z"/></g></svg>');*/
+margin-left: 5px;
+/*display: inline-block;*/
 margin-top: -4px;
 }
+
 .home-block__trapezium{
 z-index: 2;
 width: 47%;
@@ -488,7 +513,9 @@ padding: 135px 0;
 .home-block__link{
 color: #259bbd;
 }
-
+.home-block__link:hover{
+color: #7b6c63;
+}
 	.hover-wrap{
 		position: relative;
 	}
@@ -560,6 +587,11 @@ font-family: 'Raleway-Medium';
 width: 100%;
 
 }
+.h-b-i__hover__p-bold:hover,
+.h-b-i__hover__p:hover{
+	color: #908f8f;
+}
+
 .h-b-i__hover__p-bold:after{
 content: '';
 display: block;
@@ -583,7 +615,7 @@ word-spacing: 10px;
 width: 55px;
 height: 55px;
 border: #fff solid 3px;
-border-radius: 25.5px;
+border-radius: 50%;
 display: -moz-inline-flex;
 display: -ms-inline-flex;
 display: -o-inline-flex;
@@ -596,6 +628,10 @@ display: inline-flex;
 -webkit-box-align: center;
     -ms-flex-align: center;
         align-items: center;
+}
+.h-b-i__hover__social i:hover{
+border: #7b6c63 solid 3px;
+color: #7b6c63;
 }
 .member-signboard{
 	width: 100%;
@@ -637,6 +673,9 @@ margin: 0;
 color: #259bbd;
 margin-top: 5px;
 display: inline-block;
+}
+.h-b-c__s-link:hover{
+color: #7b6c63;
 }
 
 .h-b__clients-fotorama .fotorama__dot{
@@ -786,6 +825,10 @@ font-family: 'FontAwesome';
   -moz-osx-font-smoothing: grayscale;
 
 	}
+
+	.fotorama__arr:hover{
+		opacity: 0.5;
+	}
 .blog-fotorama .fotorama__arr--next:before{
   content: "\f105";
 	margin-left: -10px;
@@ -821,6 +864,11 @@ content: "\f104";
 	font-family: 'Raleway-Medium';
 	font-size: 14px;
 	line-height: 18px;
+}
+.home-blog__circle-link:hover{
+color: #7b6c63;
+background-color: #fff;
+font-weight: bold;
 }
 
 .contact-form{
@@ -882,6 +930,9 @@ margin-bottom: -16px;
 	color: #929292;
 	background-color: #222;
 	/*padding-top: 55px;*/
+}
+.footer a:hover{
+color: #fff;
 }
 .footer__container{
 	padding-top: 55px;
@@ -965,23 +1016,7 @@ font-size: 14px;
 
 /*responsive*/
 
-.header__nav-mob{
-	overflow: hidden;
-	height: auto;
-background-color: #303030;
-width: 50%;
-height: 100%;
-padding: 20px;
-padding-top: 35px;
-visibility: hidden;
-position: fixed;
-z-index: 5;
-right: -100%;
-	top: 0;
-	overflow: auto;
 
-
-}
 /*animation*/
 
 @-webkit-keyframes navShow {
@@ -1021,27 +1056,7 @@ right: -100%;
     	right: -100%;
     }
 }
-.nav-show, .nav-hide{
-	visibility: visible;
-		 animation-delay:0.2s;
-    -webkit-animation-delay:0.2s;
-        -webkit-animation-duration: 0.2s;
-                animation-duration: 0.2s;
-        -webkit-animation-iteration-count: 1;
-                animation-iteration-count: 1;
-        -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
-}
-.nav-show{
-		   -webkit-animation-name: navShow;
-		           animation-name: navShow;
 
-}
-.nav-hide{
-		   -webkit-animation-name: navHide;
-		           animation-name: navHide;
-
-}
 .nav-btn{
 	-webkit-transform: rotate(90deg);
 	    -ms-transform: rotate(90deg);
@@ -1129,6 +1144,45 @@ font-size: 24px;
 }
 
 @media(max-width: 770px){
+	.header__nav-mob{
+	height: auto;
+background-color: #303030;
+width: 50%;
+height: 100%;
+padding: 20px;
+padding-top: 35px;
+visibility: hidden;
+position: fixed;
+z-index: 8;;;
+right: -100%;
+	top: 0;
+	overflow: auto;
+display: block;
+
+
+}
+
+.nav-show, .nav-hide{
+	visibility: visible;
+		 animation-delay:0.2s;
+    -webkit-animation-delay:0.2s;
+        -webkit-animation-duration: 0.2s;
+                animation-duration: 0.2s;
+        -webkit-animation-iteration-count: 1;
+                animation-iteration-count: 1;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+}
+.nav-show{
+		   -webkit-animation-name: navShow;
+		           animation-name: navShow;
+
+}
+.nav-hide{
+		   -webkit-animation-name: navHide;
+		           animation-name: navHide;
+
+}
 
 	.xs-hide{
 		display: none;
@@ -1197,10 +1251,13 @@ font-size: 12px;
 margin-bottom: 15px;	
 margin-top: 15px;
 }
-
+	.contact-form input{
+		width: 100%;
+	}
 }
 
 @media(max-width: 600px){
+
 .slider__hover__message{
 	display: none;
 }

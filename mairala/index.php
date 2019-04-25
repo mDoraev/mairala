@@ -58,7 +58,12 @@ ob_start();
 	</div>
 
 
-
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="fotorama/fotorama.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<script src = "scripts/jquery.js"></script>
+	<script src = "fotorama/fotorama.js"></script>
+	<script src = "scripts/script.js"></script>
 </body>
 </html>
 
